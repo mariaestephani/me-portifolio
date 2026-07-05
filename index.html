@@ -1,60 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Maria Estephani | Desenvolvedora Full Stack</title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>Contato</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
+    <h1>Contato</h1>
 
-    <nav class="menu">
-        <h2 class="logo">M.E</h2>
-
-        <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="projetos.html">Projetos</a></li>
-            <li><a href="contato.html">Contato</a></li>
-        </ul>
-
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="contato.html">Contato</a>
     </nav>
-
 </header>
 
 <main>
 
-<section class="hero">
+<form onsubmit="return validarFormulario()">
 
-    <p class="hello">Olá, eu sou</p>
+    <input type="text" id="nome" placeholder="Seu nome">
+    <input type="email" id="email" placeholder="Seu e-mail">
+    <textarea id="mensagem" placeholder="Sua mensagem"></textarea>
 
-    <h1>Maria Estephani</h1>
+    <button type="submit">Enviar</button>
 
-    <h2>Desenvolvedora Full Stack</h2>
-
-    <p>
-        Desenvolvendo interfaces modernas, aplicações web
-        e soluções que unem design, performance e tecnologia.
-    </p>
-
-    <div class="botoes">
-
-        <a href="projetos.html" class="btn">Ver Projetos</a>
-
-        <a href="contato.html" class="btn-outline">Contato</a>
-
-    </div>
-
-</section>
+</form>
 
 </main>
 
 <script src="script.js"></script>
-
 </body>
 </html>
