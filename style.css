@@ -143,23 +143,25 @@ header{
 
 .projetos{
     min-height:100vh;
-    padding:140px 20px 60px;
+    padding:160px 20px 60px;
+    text-align:center;
 }
 
 .projetos h1{
-    max-width:1200px;
-    margin:0 auto 20px;
     color:#00E5FF;
     font-size:45px;
+    margin-bottom:20px;
 }
 
 .projetos > p{
     max-width:800px;
-    margin:20px auto 0;
+    margin:0 auto 40px;
     color:#d5d5d5;
     line-height:1.8;
     text-align:center;
 }
+
+
 
 .sobre{
     max-width:1000px;
