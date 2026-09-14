@@ -38,7 +38,7 @@ header{
 
 .logo{
     color:#00E5FF;
-    font-size:20px;
+    font-size:22px;
     font-weight:700;
     line-height:1;
     margin:0;
@@ -160,8 +160,6 @@ header{
     line-height:1.8;
     text-align:center;
 }
-
-
 
 .sobre{
     max-width:1000px;
@@ -302,12 +300,26 @@ header{
 
     .menu{
         flex-direction:column;
+        padding:15px 20px;
+    }
+
+    .logo{
+        font-size:20px;
     }
 
     .menu ul{
-        margin-top:20px;
+        margin-top:15px;
         flex-direction:column;
         text-align:center;
+        gap:12px;
+    }
+
+    .menu a{
+        font-size:16px;
+    }
+
+    .hero{
+        padding:180px 20px 80px;
     }
 
     .hero h1{
@@ -319,15 +331,23 @@ header{
     }
 
     .projetos{
-        padding-top:140px;
+        padding-top:240px;
     }
 
     .projetos h1{
         font-size:35px;
     }
 
+    .projetos > p{
+        font-size:15px;
+    }
+
+    .sobre{
+        margin-top:240px;
+    }
+
     .contato{
-        padding-top:140px;
+        padding-top:240px;
     }
 
     .contato h1{
