@@ -30,8 +30,62 @@ function mostrarNotificacao(texto) {
     }, 3000);
 }
 
+const formulario = document.getElementById("form-contato");
 
-    setTimeout(() => {
-        notif.remove();
-    }, 3000);
+if (formulario) {
+
+    formulario.addEventListener("submit", async function(event) {
+
+        event.preventDefault();
+
+        const status = document.getElementById("mensagem-status");
+        const botao = formulario.querySelector("button");
+
+        botao.disabled = true;
+        botao.innerText = "Enviando...";
+
+        const dados = new FormData(formulario);
+
+        try {
+
+            const resposta = await fetch(
+                "https://formspree.io/f/xwlkgawy",
+                {
+                    method: "POST",
+                    body: dados,
+                    headers: {
+                        "Accept": "application/json"
+                    }
+                }
+            );
+
+            if (resposta.ok) {
+
+                status.innerText = "Mensagem enviada com sucesso! Obrigada pelo contato 💙";
+                status.style.color = "#00E5FF";
+                status.style.marginTop = "20px";
+                status.style.fontWeight = "bold";
+
+                formulario.reset();
+
+            } else {
+
+                status.innerText = "Não foi possível enviar a mensagem. Tente novamente.";
+                status.style.color = "#ff4d4d";
+                status.style.marginTop = "20px";
+            }
+
+        } catch (erro) {
+
+            status.innerText = "Ocorreu um erro ao enviar. Verifique sua conexão e tente novamente.";
+            status.style.color = "#ff4d4d";
+            status.style.marginTop = "20px";
+
+        } finally {
+
+            botao.disabled = false;
+            botao.innerText = "Enviar Mensagem";
+        }
+
+    });
 }
