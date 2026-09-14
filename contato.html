@@ -1,9 +1,13 @@
+```html
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Contato | Maria Estephani</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,62 +15,106 @@
 
 <header>
 
-    <h1>MARIA ESTEPHANI</h1>
+    <nav class="menu">
 
-    <nav>
-        <a href="index.html">Início</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="projetos.html">Projetos</a>
-        <a href="contato.html">Contato</a>
+        <div class="logo">
+            M.E
+        </div>
+
+        <ul>
+            <li>
+                <a href="index.html">Início</a>
+            </li>
+
+            <li>
+                <a href="sobre.html">Sobre</a>
+            </li>
+
+            <li>
+                <a href="projetos.html">Projetos</a>
+            </li>
+
+            <li>
+                <a href="contato.html" class="ativo">Contato</a>
+            </li>
+        </ul>
+
     </nav>
 
 </header>
 
+
 <main class="contato">
 
-    <h2>Entre em Contato</h2>
+    <h1>Entre em Contato</h1>
 
     <p>
-        Ficarei feliz em conversar sobre oportunidades, projetos ou tecnologia.
+        Ficarei feliz em conversar sobre oportunidades,
+        projetos ou tecnologia.
     </p>
+
 
     <div class="informacoes-contato">
 
-        <p>📧 <strong>E-mail:</strong>
+        <p>
+            <strong>E-mail:</strong>
             <a href="mailto:mariaestephaniso@gmail.com">
                 mariaestephaniso@gmail.com
             </a>
         </p>
 
-        <p>📱 <strong>Telefone:</strong>
+        <p>
+            <strong>Telefone:</strong>
             <a href="tel:+5514996487195">
                 (14) 99648-7195
             </a>
         </p>
 
-        <p>💼 <strong>LinkedIn:</strong>
-            <a href="https://www.linkedin.com/in/maria-estephani-5609042a5" target="_blank">
+        <p>
+            <strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/maria-estephani-5609042a5"
+               target="_blank">
                 linkedin.com/in/maria-estephani-5609042a5
             </a>
         </p>
 
     </div>
 
+
     <form onsubmit="return validarFormulario()">
 
-        <input type="text" id="nome" placeholder="Seu nome">
+        <input
+            type="text"
+            id="nome"
+            placeholder="Seu nome"
+            required
+        >
 
-        <input type="email" id="email" placeholder="Seu e-mail">
+        <input
+            type="email"
+            id="email"
+            placeholder="Seu e-mail"
+            required
+        >
 
-        <textarea id="mensagem" placeholder="Escreva sua mensagem..."></textarea>
+        <textarea
+            id="mensagem"
+            placeholder="Escreva sua mensagem..."
+            required
+        ></textarea>
 
-        <button type="submit">Enviar Mensagem</button>
+        <button type="submit">
+            Enviar Mensagem
+        </button>
 
     </form>
 
 </main>
 
+
 <script src="script.js"></script>
 
 </body>
+
 </html>
+```
