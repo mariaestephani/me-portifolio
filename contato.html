@@ -79,34 +79,36 @@
 
     </div>
 
+<form action="https://formspree.io/f/xwlkgawy" method="POST">
 
-    <form onsubmit="return validarFormulario()">
+    <input
+        type="text"
+        name="nome"
+        id="nome"
+        placeholder="Seu nome"
+        required
+    >
 
-        <input
-            type="text"
-            id="nome"
-            placeholder="Seu nome"
-            required
-        >
+    <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Seu e-mail"
+        required
+    >
 
-        <input
-            type="email"
-            id="email"
-            placeholder="Seu e-mail"
-            required
-        >
+    <textarea
+        name="mensagem"
+        id="mensagem"
+        placeholder="Escreva sua mensagem..."
+        required
+    ></textarea>
 
-        <textarea
-            id="mensagem"
-            placeholder="Escreva sua mensagem..."
-            required
-        ></textarea>
+    <button type="submit">
+        Enviar Mensagem
+    </button>
 
-        <button type="submit">
-            Enviar Mensagem
-        </button>
-
-    </form>
+</form>
 
 </main>
 
