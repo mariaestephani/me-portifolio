@@ -141,6 +141,25 @@ header{
     color:#00E5FF;
 }
 
+.projetos{
+    min-height:100vh;
+    padding:140px 20px 60px;
+}
+
+.projetos h1{
+    max-width:1200px;
+    margin:0 auto 20px;
+    color:#00E5FF;
+    font-size:45px;
+}
+
+.projetos > p{
+    max-width:1200px;
+    margin:0 auto;
+    color:#d5d5d5;
+    line-height:1.8;
+}
+
 .sobre{
     max-width:1000px;
     margin:120px auto;
@@ -294,6 +313,14 @@ header{
 
     .hero h2{
         font-size:24px;
+    }
+
+    .projetos{
+        padding-top:140px;
+    }
+
+    .projetos h1{
+        font-size:35px;
     }
 
     .contato{
