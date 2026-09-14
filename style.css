@@ -154,10 +154,11 @@ header{
 }
 
 .projetos > p{
-    max-width:1200px;
-    margin:0 auto;
+    max-width:800px;
+    margin:20px auto 0;
     color:#d5d5d5;
     line-height:1.8;
+    text-align:center;
 }
 
 .sobre{
