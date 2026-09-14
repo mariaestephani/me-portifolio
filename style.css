@@ -40,6 +40,10 @@ header{
     color:#00E5FF;
     font-size:28px;
     font-weight:700;
+    line-height:1;
+    margin:0;
+    padding:0;
+    text-decoration:none;
 }
 
 .menu ul{
