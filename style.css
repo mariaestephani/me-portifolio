@@ -1,4 +1,3 @@
-/* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 *{
@@ -16,8 +15,6 @@ body{
     background:#050505;
     color:#fff;
 }
-
-/* ================= MENU ================= */
 
 header{
     position:fixed;
@@ -42,6 +39,7 @@ header{
 .logo{
     color:#00E5FF;
     font-size:28px;
+    font-weight:700;
 }
 
 .menu ul{
@@ -60,8 +58,6 @@ header{
 .menu .ativo{
     color:#00E5FF;
 }
-
-/* ================= HERO ================= */
 
 .hero{
     min-height:100vh;
@@ -91,8 +87,6 @@ header{
     line-height:1.8;
 }
 
-/* ================= BOTÕES ================= */
-
 .btn{
     display:inline-block;
     margin-top:40px;
@@ -109,8 +103,6 @@ header{
     box-shadow:0 0 25px #00E5FF;
     transform:translateY(-4px);
 }
-
-/* ================= CARDS ================= */
 
 .cards{
     display:grid;
@@ -145,8 +137,6 @@ header{
     color:#00E5FF;
 }
 
-/* ================= SOBRE ================= */
-
 .sobre{
     max-width:1000px;
     margin:120px auto;
@@ -163,8 +153,6 @@ header{
     color:#d5d5d5;
     margin-bottom:20px;
 }
-
-/* ================= SKILLS ================= */
 
 .skills{
     display:flex;
@@ -186,34 +174,151 @@ header{
     color:#050505;
 }
 
-/* ================= RESPONSIVO ================= */
-
-@media(max-width:768px){
-
-.menu{
-    flex-direction:column;
+.contato{
+    max-width:1000px;
+    min-height:100vh;
+    margin:0 auto;
+    padding:140px 20px 60px;
 }
 
-.menu ul{
-    margin-top:20px;
-    flex-direction:column;
-    text-align:center;
-}
-
-.hero h1{
+.contato h1{
+    color:#00E5FF;
     font-size:45px;
+    margin-bottom:20px;
 }
 
-.hero h2{
-    font-size:24px;
+.contato > p{
+    color:#d5d5d5;
+    line-height:1.8;
+    margin-bottom:40px;
 }
-.menu ul li:last-child a{
-    font-size:14px;
-    opacity:0.8;
-    padding:6px 12px;
-    border:1px solid #00E5FF;
-    border-radius:20px;
+
+.informacoes-contato{
+    margin-bottom:40px;
+}
+
+.informacoes-contato p{
+    margin-bottom:18px;
+    color:#fff;
+}
+
+.informacoes-contato strong{
     color:#00E5FF;
 }
 
+.informacoes-contato a{
+    color:#fff;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.informacoes-contato a:hover{
+    color:#00E5FF;
+}
+
+.contato form{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.contato input,
+.contato textarea{
+    width:100%;
+    padding:15px;
+    background:#111;
+    color:#fff;
+    border:1px solid rgba(0,229,255,.5);
+    border-radius:10px;
+    outline:none;
+    font-family:'Poppins',sans-serif;
+    font-size:15px;
+}
+
+.contato input::placeholder,
+.contato textarea::placeholder{
+    color:#888;
+}
+
+.contato input:focus,
+.contato textarea:focus{
+    border-color:#00E5FF;
+    box-shadow:0 0 10px rgba(0,229,255,.25);
+}
+
+.contato textarea{
+    min-height:150px;
+    resize:vertical;
+    grid-column:1 / -1;
+}
+
+.contato button{
+    grid-column:1 / -1;
+    justify-self:start;
+    padding:15px 35px;
+    background:#00E5FF;
+    color:#050505;
+    border:none;
+    border-radius:40px;
+    font-family:'Poppins',sans-serif;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.contato button:hover{
+    box-shadow:0 0 25px #00E5FF;
+    transform:translateY(-4px);
+}
+
+@media(max-width:768px){
+
+    .menu{
+        flex-direction:column;
+    }
+
+    .menu ul{
+        margin-top:20px;
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero h1{
+        font-size:45px;
+    }
+
+    .hero h2{
+        font-size:24px;
+    }
+
+    .contato{
+        padding-top:140px;
+    }
+
+    .contato h1{
+        font-size:35px;
+    }
+
+    .contato form{
+        grid-template-columns:1fr;
+    }
+
+    .contato textarea,
+    .contato button{
+        grid-column:auto;
+    }
+
+    .contato button{
+        width:100%;
+    }
+
+    .menu ul li:last-child a{
+        font-size:14px;
+        opacity:.8;
+        padding:6px 12px;
+        border:1px solid #00E5FF;
+        border-radius:20px;
+        color:#00E5FF;
+    }
 }
