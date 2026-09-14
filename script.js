@@ -2,20 +2,6 @@ function mensagem() {
     mostrarNotificacao("Bem-vinda ao meu portfólio 💠");
 }
 
-function validarFormulario() {
-
-    let nome = document.getElementById("nome").value.trim();
-    let email = document.getElementById("email").value.trim();
-
-    if (nome === "" || email === "") {
-        mostrarNotificacao("⚠️ Preencha todos os campos!");
-        return false;
-    }
-
-    mostrarNotificacao("Mensagem enviada com sucesso 🚀");
-    return true;
-}
-
 function mostrarNotificacao(texto) {
 
     let notif = document.createElement("div");
@@ -38,6 +24,12 @@ function mostrarNotificacao(texto) {
     notif.style.zIndex = "9999";
 
     document.body.appendChild(notif);
+
+    setTimeout(() => {
+        notif.remove();
+    }, 3000);
+}
+
 
     setTimeout(() => {
         notif.remove();
