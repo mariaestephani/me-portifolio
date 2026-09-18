@@ -1,7 +1,7 @@
 function abrirModalProjeto() {
     let modal = document.getElementById("modal-projeto");
     if (modal) {
-        modal.style.display = "block";
+        modal.style.display = "flex";
     }
 }
 
