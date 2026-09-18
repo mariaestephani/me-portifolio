@@ -4,18 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos | Maria Estephani</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-
     <nav class="menu">
         <div class="logo">
-    Maria Estephani
-</div>
+            Maria Estephani
+        </div>
 
         <ul>
             <li><a href="index.html">Início</a></li>
@@ -23,15 +21,11 @@
             <li><a href="projetos.html" class="ativo">Projetos</a></li>
             <li><a href="contato.html">Contato</a></li>
         </ul>
-
     </nav>
-
 </header>
 
 <main>
-
 <section class="projetos">
-
     <h1>Projetos</h1>
 
     <p>
@@ -39,57 +33,73 @@
     </p>
 
     <div class="cards">
-
         <div class="card">
             <h2>Portfólio Pessoal</h2>
-
             <p>
                 Site desenvolvido com HTML, CSS e JavaScript,
                 totalmente responsivo.
             </p>
-
             <span>HTML • CSS • JavaScript</span>
-
         </div>
 
         <div class="card">
             <h2>Dashboard BI</h2>
-
             <p>
                 Dashboard para análise de indicadores e visualização de dados.
             </p>
-
             <span>Power BI • SQL</span>
-
         </div>
 
         <div class="card">
             <h2>Automação de Testes</h2>
-
             <p>
                 Scripts para automação de testes e validação de sistemas.
             </p>
-
             <span>Python • Selenium</span>
-
         </div>
 
-        <div class="card">
+        <div class="card card-clicavel" onclick="abrirModalProjeto()">
             <h2>Projetos Acadêmicos</h2>
-
             <p>
                 Exercícios e aplicações desenvolvidas em C, C#, Python, R e PHP.
             </p>
-
-            <span>C • Python • R</span>
-
+            <span>C • Python • R • PHP</span>
         </div>
-
     </div>
-
 </section>
 
+<div id="modal-projeto" class="modal">
+    <div class="modal-conteudo">
+        <span class="fechar" onclick="fecharModalProjeto()">&times;</span>
+        
+        <h2>Sistema de Controle de Chamados</h2>
+        
+        <img src="controle-chamados.png" alt="Preview do Controle de Chamados" class="img-preview">
+        
+        <div class="descricao-modal">
+            <p><strong>Sobre o Projeto:</strong></p>
+            <p>
+                Aplicação web para gestão e acompanhamento de chamados internos[cite: 1].
+                Desenvolvida com foco em UX/UI, possui interface em <em>dark mode</em>
+                e tabela adaptável com rolagem horizontal[cite: 1].
+            </p>
+            
+            <p style="margin-top: 15px;"><strong>Principais Funcionalidades:</strong></p>
+            <ul>
+                <li>Abertura, listagem, finalização e eliminação de chamados[cite: 1]</li>
+                <li>Atribuição de prazos, categorias e níveis de urgência[cite: 1]</li>
+                <li>Gestão de solicitações com identificação de solicitante e e-mail[cite: 1]</li>
+                <li>Layout responsivo estruturado para navegação fluida[cite: 1]</li>
+            </ul>
+
+            <p style="margin-top: 15px;"><strong>Tecnologias Utilizadas:</strong></p>
+            <p><code>PHP</code> • <code>PostgreSQL</code> • <code>HTML5</code> • <code>CSS3</code> • <code>JavaScript</code></p>
+        </div>
+    </div>
+</div>
 </main>
+
+<script src="script.js"></script>
 
 </body>
 </html>
