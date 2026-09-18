@@ -130,6 +130,10 @@ header{
     box-shadow:0 0 25px rgba(0,229,255,.5);
 }
 
+.card-clicavel {
+    cursor: pointer;
+}
+
 .card h2{
     color:#00E5FF;
     margin-bottom:20px;
@@ -349,6 +353,23 @@ header{
 
 .fechar:hover {
     color: #00E5FF;
+}
+
+.btn-fechar-modal {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: transparent;
+    border: 1px solid #00E5FF;
+    color: #00E5FF;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s;
+}
+
+.btn-fechar-modal:hover {
+    background: #00E5FF;
+    color: #050505;
 }
 
 .img-preview {
